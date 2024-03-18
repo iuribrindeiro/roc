@@ -94,6 +94,10 @@ result
 !/examples/static-site-gen/platform/Cargo.lock
 # static-site-gen exception is because of https://github.com/tkaitchuck/aHash/issues/195
 
+# Ignore bin/obj dotnet build folders from examples
+examples/**/bin
+examples/**/obj
+
 # snapshot tests temp file
 *.pending-snap
 
